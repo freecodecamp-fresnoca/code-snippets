@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="snippetsApp">
+<head>
+  <meta charset="UTF-8">
+  <title>FCC | Code Snippets</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="mainContainer" ng-controller="linkList">
+    <h1 class="title" ng-bind="title"></h1>
+    <p class="description" ng-bind="site.description"></p>
+    <div class="linkList" ng-repeat="info in info">
+      <a ng-href="{{info.link}}" target="_blank" ng-bind="info.title"></a><br>
+
+    </div>
+
+  </div>
+
+
+  <script src="angular.js"></script>
+  <script src="app.js"></script>
+  <script src="snippets.js"></script>
+</body>
+</html>
